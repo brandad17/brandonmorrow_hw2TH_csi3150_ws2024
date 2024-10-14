@@ -1,0 +1,183 @@
+/* import the google api font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+ /* supress browser defaults and select alternate box model*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif, Tahoma;
+ /* Set variables for colors */
+  --bg-primary: #eff7ff; /*Alice Blue*/
+  --bg-secondary: #558c8c; /*Dark Cyan*/
+  --font-color-primary: #e8db7d; /*Flax*/
+  --font-color-secondary: #82204a; /*Murrey*/
+  --backup-color: #231123; /*Dark purple*/
+  --second-backup-color: #5f1a37 /* Tyrian Purple*/
+}
+
+/* Desktop Styling DO I NEED??*/
+body {
+      display: flexbox;
+      background-color: var(--bg-primary); /*Alice Blue*/
+      height: 100%;
+      margin: 0%;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+/* Style the navbar header */
+.navbar {
+      background-color: var(--font-color-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 80px;
+      padding: 0 50px;
+      width: 100%;
+}
+
+/* Style the name in the header */
+.navbar h2 {
+      color: var(--font-color-primary);
+      text-decoration: none;
+      justify-content: flex-start;
+      margin-left: 50px; 
+      margin-right: 875px;
+}
+
+/* Style the children of the header */
+.navbar nav ul {
+      color: var(--second-backup-color);
+      display: flex;
+      font-weight: 775;
+      justify-content: flex-end; /* Right-align the items */
+      margin-left: auto;
+}
+
+/* Make the list without bullets*/
+.navbar ul li {
+      list-style: none;
+}
+
+/* Decorate list elements */
+.navbar ul li a {
+      text-decoration: none; /* Takes away underline */
+      color: var(--font-color-primary);
+      -webkit-text-stroke: .3px var(--backup-color);
+      font-size: 16px;
+      margin-right: 50px;
+}
+
+.about {
+      margin: 0 0 50px 0;
+}
+
+.about h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0 30px 0;
+      font-size: 30px;
+}
+
+.about p {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 0 300px 0 300px;
+}
+
+.heading {
+      display: none; /* Hide the heading */
+}
+
+.img-container {
+      display: flex;
+      align-items: center; /* up and down */
+      justify-content: center; /* left to right */
+      flex-direction: column;
+}
+
+/* CROP IMAGE LATER */
+
+.quote :first-child{
+      padding: 30px;
+      padding-bottom: 1%;
+}
+
+.quote :last-child {
+      margin: 10px 0 50px 0;
+}
+
+.info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+}
+
+.info p {
+      display: none;
+}
+
+.info button {
+      background-color: var(--bg-secondary);
+      border: none; /* Remove border */
+      color: var(--bg-primary); /* Button text color */
+      padding: 15px 30px; /* Button padding */
+      font-size: 16px; /* Button font size */
+      cursor: pointer; /* Pointer cursor */
+      margin: 10px 0; /* Space between buttons */
+}
+
+.info button a {
+      text-decoration: none;
+      color: var(--bg-primary);
+}
+
+#button-about {
+      text-decoration: none;
+      margin-left: 150px;
+      text-align: none;
+}
+
+.progress-bar {
+      background-color: var(--font-color-secondary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.progress-bar label{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 30px;
+}
+
+.progress-bar progress {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      height: 30px;
+      width: 90%;
+}
+
+footer {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 80px;
+      padding: 0 50px;
+      width: 100%;
+}
+
+footer p {
+      margin-top: 30px;
+      width: 100%
+}
+
+footer .link {
+      text-align: right;
+}
