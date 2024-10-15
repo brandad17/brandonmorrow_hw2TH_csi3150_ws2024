@@ -1,0 +1,223 @@
+/* import the google api font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+ /* supress browser defaults and select alternate box model*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif, Tahoma;
+ /* Set variables for colors */
+  --bg-primary: #eff7ff; /*Alice Blue*/
+  --bg-secondary: #558c8c; /*Dark Cyan*/
+  --font-color-primary: #e8db7d; /*Flax*/
+  --font-color-secondary: #82204a; /*Murrey*/
+  --backup-color: #231123; /*Dark purple*/
+  --second-backup-color: #5f1a37 /* Tyrian Purple*/
+}
+
+body {
+      display: flexbox;
+      background-color: var(--bg-primary); /*Alice Blue*/
+      height: 100%;
+      margin: 0%;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+/* Style the navbar header */
+.navbar {
+      background-color: var(--font-color-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 80px;
+      padding: 0 50px;
+      width: 100%;
+}
+
+/* Style the name in the header */
+.navbar h2 {
+      color: var(--font-color-primary);
+      text-decoration: none;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-right: 925px;
+}
+
+/* Style the children of the header */
+.navbar nav ul {
+      color: var(--second-backup-color);
+      display: flex;
+      font-weight: 775;
+      justify-content: flex-end; /* Right-align the items */
+      margin-left: auto;
+}
+
+/* Make the list without bullets*/
+.navbar ul li {
+      list-style: none;
+}
+
+/* Decorate list elements */
+.navbar ul li a {
+      text-decoration: none; /* Takes away underline */
+      color: var(--font-color-primary);
+      -webkit-text-stroke: .3px var(--backup-color);
+      font-size: 16px;
+      margin-right: 50px;
+}
+
+.navbar ul li a:hover {
+      color: var(--backup-color); /*Changes to a hover background color*/
+      transform: scale(1.05);
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px ;
+}
+
+.heading .heading-title {
+    display: flex;
+    margin: 0 0 0 50px;
+}
+
+.heading .heading-contact {
+    display: flex;
+} 
+
+.heading-contact h3 {
+    margin: 20px 0 0 0;
+    font-size: 30px;
+}
+
+.heading .heading-info {
+    margin: 10px;
+    font-weight: 500;
+}
+
+
+
+.objective{
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--font-color-secondary);
+}
+
+.objective h2{
+    display: flex;
+    font-size: 40px;
+    padding: 15px;
+    justify-content: center;
+    color: var(--font-color-primary);
+}
+
+.objective p {
+    display: flex;
+    justify-content: center;
+    color: var(--font-color-primary)
+}
+
+.professional-experience h2{
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.professional-experience .experience-entrega h4 {
+    background-color: var(--font-color-secondary);
+    font-size: 20px;
+    padding: 5px;
+    color: var(--font-color-primary);
+}
+
+.professional-experience .experience-entrega p {
+    font-weight: 500;
+    padding: 10px 50px 10px 10px;
+}
+
+.professional-experience .experience-oakland h4 {
+    background-color: var(--font-color-secondary);
+    font-size: 20px;
+    padding: 5px;
+    color: var(--font-color-primary);
+}
+
+.professional-experience .experience-oakland p {
+    font-weight: 500;
+    padding: 10px 50px 10px 10px;
+}
+
+.professional-experience .experience-home-depot h4 {
+    background-color: var(--font-color-secondary);
+    font-size: 20px;
+    padding: 5px;
+    color: var(--font-color-primary);
+}
+
+.professional-experience .experience-home-depot p {
+    font-weight: 500;
+    padding: 10px 50px 10px 10px;
+}
+
+.education h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 15px;
+    background-color: var(--bg-secondary);
+}
+
+.table {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--font-color-secondary);
+}
+
+.table td {
+    padding: 2px 5px 2px 5px;
+}
+
+.table th {
+    color: var(--font-color-primary)
+}
+
+.table td {
+    color: var(--font-color-primary)
+}
+
+.extracurricular h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 15px;
+    background-color: var(--bg-secondary);
+}
+
+.extracurricular p {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
